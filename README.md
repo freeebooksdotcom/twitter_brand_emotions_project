@@ -46,7 +46,8 @@ For our two-class predictions, we used a Gaussian Naïve Bayes Classifier, Multi
 
 In addition to upsampling, we also tried eliminating some of the most frequent features shared by both classes such as "Google", "SXSW", and "Apple." The Gaussian Naïve Bayes lowered its misclassification of Negative Tweets; however, it had poorer performance for the positive tweets. The SVC showed no improvement since it eliminates features automatically.
 
-We then made this problem a multiclass problem by including over 5,000 neutral tweets to see how the model would perform. For this portion, we only used Gaussian Naïve Bayes and Multinomial Bayes Classifiers because SVC took too long to train. A resampled Multinomial Bayes Classifer performed the best out of the two with an f1 score of 0.51.
+We then made this problem a multiclass problem by including over 5,000 neutral tweets to see how the model would perform. For this portion, we only used Gaussian Naïve Bayes and Multinomial Bayes Classifiers because SVC took too long to train. A resampled Multinomial Bayes Classifer performed the best out of the two with an f1 score of 0.53.
+
 ![Image](images/naive_resample.png?raw=true)
 ![Image](images/unsample_multi.png?raw=true)
 ![Image](images/resample_multi.png?raw=true)
